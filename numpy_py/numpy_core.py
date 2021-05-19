@@ -2,12 +2,13 @@ import numpy as np
 
 
 class NumpyOperation:
+
       def __init__(self, arr_data_1, arr_data_2):
            
             # Creating a rank 1 Array
-            arr = np.array(arr_data_1)
+            self.arr = np.array(arr_data_1)
 
-            print("Array with Rank 1: \n",arr)
+            print("Array with Rank 1: \n",self.arr)
 
             # Creating a rank 2 Array
           
@@ -31,5 +32,5 @@ class NumpyOperation:
             arr = np.array(arr_tuple)
             print("\nArray created using "   "passed tuple:\n", arr)
 
-
-NumpyOperation()
+      def __str__(self):
+            return super().__str__()

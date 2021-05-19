@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-from .numpy_py import NumpyOperation
+from numpy_py.numpy_core import NumpyOperation
 
 
 app = Flask(__name__)
@@ -24,10 +24,10 @@ def numpy():
                 [1, 2, 3],
                 [4, 5, 6]
                 ]
-    p1 = NumpyOperation(arr_data_1, arr_data_2)
+    NumpyOperation(arr_data_1, arr_data_2)
 
     
-    return "Test Result"
+    return  str("success")
 
 
 if __name__ == '__main__':
