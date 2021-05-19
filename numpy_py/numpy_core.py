@@ -5,32 +5,17 @@ class NumpyOperation:
 
       def __init__(self, arr_data_1, arr_data_2):
            
+            self.result = ""
             # Creating a rank 1 Array
             self.arr = np.array(arr_data_1)
 
-            print("Array with Rank 1: \n",self.arr)
-
-            # Creating a rank 2 Array
-          
-
-            arr = np.array(arr_data_2)
-
-            print("Array with Rank 2: \n", arr)
+            self.result = f"""
+                              Array with Rank 1: {self.arr}
+                           """
 
 
-            # Creating an array from tuple
-            arr_tuple = (1, 2, 3) 
-                  
-            arr = np.array(arr_tuple)
-            print("\nArray created using "   "passed tuple:\n", arr)
-
-            # Creating an array from tuple
-            arr_tuple = (
-                  (1, 2, 3),
-                  (4, 5, 6)
-                  )
-            arr = np.array(arr_tuple)
-            print("\nArray created using "   "passed tuple:\n", arr)
+      def operation(self):
+            pass
 
       def __str__(self):
-            return super().__str__()
+            return str(self.result)

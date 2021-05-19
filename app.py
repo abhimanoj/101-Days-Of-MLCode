@@ -1,7 +1,7 @@
 import os
 from flask import Flask
 from numpy_py.numpy_core import NumpyOperation
-
+from numpy_py.multiplication_of_matrix import Multiplication
 
 app = Flask(__name__)
 env_config = os.getenv("APP_SETTINGS", "config.DevelopmentConfig")
@@ -24,10 +24,20 @@ def numpy():
                 [1, 2, 3],
                 [4, 5, 6]
                 ]
-    NumpyOperation(arr_data_1, arr_data_2)
+    np_op = NumpyOperation(arr_data_1, arr_data_2)
 
     
-    return  str("success")
+    return  np_op.__str__()
+
+
+@app.route("/multiplication")
+def multiplication():
+
+  
+    np_mul = Multiplication()
+    
+    
+    return  np_mul.operation().__str__()
 
 
 if __name__ == '__main__':
