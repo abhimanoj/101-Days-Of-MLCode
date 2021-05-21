@@ -1,7 +1,7 @@
 import os
 from flask import Flask
 from numpy_py.numpy_core import NumpyOperation
-from numpy_py.multiplication_of_matrix import Multiplication
+from numpy_py.numpy_tutorial import NumpyTutorial
 
 app = Flask(__name__)
 env_config = os.getenv("APP_SETTINGS", "config.DevelopmentConfig")
@@ -30,11 +30,11 @@ def numpy():
     return  np_op.__str__()
 
 
-@app.route("/multiplication")
-def multiplication():
+@app.route("/numpy_tutorial")
+def numpy_tutorial():
 
   
-    np_mul = Multiplication()
+    np_mul = NumpyTutorial()
     
     
     return  np_mul.operation().__str__()

@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class Multiplication:
+class NumpyTutorial:
 
       def __init__(self):
            
@@ -30,4 +30,4 @@ class Multiplication:
             return str(self.result)
 
 
-print(Multiplication().operation())
+print(NumpyTutorial().operation())
