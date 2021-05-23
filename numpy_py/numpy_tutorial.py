@@ -33,6 +33,10 @@ class NumpyTutorial:
 
             # Declare a 10x10x10 array with random values
             _10x10x10_with_random = np.random.random((10,10,10))
+
+            # Multiply a 5x3 matrix by a 3x2 matrix (real matrix product)
+            _op_on_mat = np.dot(np.ones((5,3)), np.ones((3,2)))
+
             
 
             self.result = f"""
@@ -58,6 +62,9 @@ class NumpyTutorial:
 
                         Declare a 10x10x10 array with random values:<br>
                         {_10x10x10_with_random}<br><br>
+
+                        Multiply a 5x3 matrix by a 3x2 matrix (real matrix product)
+                        {_op_on_mat}<br><br>
 
                         Reuslt is multiplication: { np.dot(self.input_1, self.input_2)}
                         """
