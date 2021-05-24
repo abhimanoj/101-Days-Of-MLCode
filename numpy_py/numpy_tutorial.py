@@ -42,6 +42,11 @@ class NumpyTutorial:
             _8x8_matrix[1::2,::2] = 1
             _8x8_matrix[::2,1::2] = 1
 
+            #Declare a 10x10 array with random values and find the minimum and maximum values
+
+            _10x10_random = np.random.random((10,10,10))
+        
+
 
             self.result = f"""
                         Version:{np.__version__} <br>
@@ -73,6 +78,10 @@ class NumpyTutorial:
                         Declare a 8x8 matrix and fill it with a checkerboard pattern
                         {_8x8_matrix}<br><br>
 
+                        Declare a 10x10 array with random values and find the minimum and maximum values
+                        {_10x10_random}<br>
+                        {_10x10_random.max()}<br>
+                        {_10x10_random.min()}<br><br>
 
                         Reuslt is multiplication: { np.dot(self.input_1, self.input_2)}
                         """
