@@ -37,7 +37,11 @@ class NumpyTutorial:
             # Multiply a 5x3 matrix by a 3x2 matrix (real matrix product)
             _op_on_mat = np.dot(np.ones((5,3)), np.ones((3,2)))
 
-            
+            # Declare a 8x8 matrix and fill it with a checkerboard pattern
+            _8x8_matrix  = np.zeros((8,8))
+            _8x8_matrix[1::2,::2] = 1
+            _8x8_matrix[::2,1::2] = 1
+
 
             self.result = f"""
                         Version:{np.__version__} <br>
@@ -65,6 +69,10 @@ class NumpyTutorial:
 
                         Multiply a 5x3 matrix by a 3x2 matrix (real matrix product)
                         {_op_on_mat}<br><br>
+
+                        Declare a 8x8 matrix and fill it with a checkerboard pattern
+                        {_8x8_matrix}<br><br>
+
 
                         Reuslt is multiplication: { np.dot(self.input_1, self.input_2)}
                         """
