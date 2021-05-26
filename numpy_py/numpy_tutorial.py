@@ -43,8 +43,12 @@ class NumpyTutorial:
             _8x8_matrix[::2,1::2] = 1
 
             #Declare a 10x10 array with random values and find the minimum and maximum values
-
             _10x10_random = np.random.random((10,10,10))
+
+            # Create a vector of size 1000 with values ranging from 0 to 1, both excluded
+            _1000_size = np.random.linspace(0,1,1002,endpoint=True)[1:-1]
+
+
         
 
 
@@ -82,6 +86,9 @@ class NumpyTutorial:
                         {_10x10_random}<br>
                         {_10x10_random.max()}<br>
                         {_10x10_random.min()}<br><br>
+
+                        Create a vector of size 1000 with values ranging from 0 to 1, both excluded
+                        {_1000_size}<br><br>
 
                         Reuslt is multiplication: { np.dot(self.input_1, self.input_2)}
                         """
