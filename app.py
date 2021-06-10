@@ -12,7 +12,8 @@ import random
 @app.route("/")
 def index():
     #operation
-    #logic
+    #data is loaded
+    #file is loaded
 
     #Result
     return "Test Result"
