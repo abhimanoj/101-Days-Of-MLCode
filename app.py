@@ -16,6 +16,14 @@ def index():
     #file is loaded
 
     #Result
+    print("2*2")
+    print("2*2")
+    print("2*2")
+
+    print("2*2")
+    print("2*2")
+    print("2*2")
+
     return "Test Result"
 
 @app.route("/numpy")
