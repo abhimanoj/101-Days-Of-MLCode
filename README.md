@@ -1,4 +1,4 @@
-# Collection Of Code
+# Collection Of Code...
 
 # 101-Days-Of-MLCode
 
@@ -21,9 +21,6 @@ Say what the step will be
 
 ```
 Give the example
-```
-
-And repeat
 
 ```
 until finished
