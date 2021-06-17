@@ -3,7 +3,11 @@ from utils import *
 
 
 def test_error():
-    raise DataError("error is here")
+
+    """
+    raise exception..
+    """
+    raise DataError("error is here") 
 
 try:
     test_error()
