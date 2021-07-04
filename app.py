@@ -2,6 +2,7 @@ import os
 from flask import Flask
 from numpy_py.numpy_core import NumpyOperation
 from numpy_py.numpy_tutorial import NumpyTutorial
+from functools import reduce
 
 app = Flask(__name__)
 env_config = os.getenv("APP_SETTINGS", "config.DevelopmentConfig")
@@ -59,5 +60,10 @@ def numpy_tutorial():
 
 if __name__ == '__main__':
 
+    result = reduce((lambda x, y: x / y), [1,2])
+    print(result)
+
     app.secret_key = app.config.get("SECRET_KEY")
     app.run(debug=True)
+
+
