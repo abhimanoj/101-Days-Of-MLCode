@@ -6,3 +6,22 @@ $ python3 -m pip install Flask==1.1.2
 $ python3 -m pip freeze > requirements.txt
 $ echo __pycache__ >> .gitignore
 $ pwd
+
+
+
+#Data Dump to csv -MySql
+
+EXPORT daata as csv:- 
+mysql -u user -p dbnam -e "select * from table_name" -B > output.csv
+
+SELECT column_1,column_2 INTO OUTFILE '/var/lib/mysql-files/output.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'  FROM table_name;
+
+LOAD DATA INFILE '/var/lib/mysql-files/out.csv' IGNORE INTO TABLE BACKTEST_2016 FIELDS TERMINATED BY ','  LINES TERMINATED BY '\n' (ticker,date,time,open,high,low,close,volume,option_interest);
+
+openssl pkcs12 -export -out certificate.pfx -inkey generated-private-key.txt -in 548631f0e96f6aca.crt -certfile gd_bundle-g2-g1.crt
+
+
+
+#Run Docker:-
+docker-compose down
+docker-compose up -d --no-deps --build  
