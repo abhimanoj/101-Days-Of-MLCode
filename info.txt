@@ -20,7 +20,9 @@ LOAD DATA INFILE '/var/lib/mysql-files/out.csv' IGNORE INTO TABLE BACKTEST_2016 
 
 openssl pkcs12 -export -out certificate.pfx -inkey generated-private-key.txt -in 548631f0e96f6aca.crt -certfile gd_bundle-g2-g1.crt
 
+#pip install
 
+cat requirements.txt | xargs -n 1 pip3 install
 
 #Run Docker:-
 docker-compose down
