@@ -80,5 +80,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 #Update you daily activity
 
+$ sudo apt install nginx mysql-server python3-pip python3-dev libmysqlclient-dev 
+$ sudo apt install mysql-client
+$ sudo mysql_secure_installation
+$ sudo mysql ( configured new db requirements )
+$ sudo -H pip3 install --upgrade pip
+$ sudo -H pip3 install virtualenv
+$ pip install django gunicorn mysqlclient (virtualenv) 
+
 
 
