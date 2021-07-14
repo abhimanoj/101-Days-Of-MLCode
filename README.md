@@ -90,3 +90,4 @@ $ pip install django gunicorn mysqlclient (virtualenv)
 
 
 
+LOAD DATA INFILE '/var/lib/mysql-files/out.csv' IGNORE INTO TABLE tname FIELDS TERMINATED BY ','  LINES TERMINATED BY '\n' (ticker,date,time,open,high,low,close,volume,option_interest);
